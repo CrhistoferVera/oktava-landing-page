@@ -32,17 +32,14 @@
         </p>
       </div>
 
-      <!-- Image placeholder -->
+      <!-- Restaurant image -->
       <div class="relative aspect-[4/3] rounded-2xl overflow-hidden bg-zinc-800">
-        <div class="absolute inset-0 bg-brand/5 pointer-events-none"></div>
-        <div class="absolute inset-0 oktava-grid-bg opacity-10 pointer-events-none"></div>
-        <div class="absolute inset-0 flex flex-col items-center justify-center gap-3 select-none">
-          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-zinc-600" aria-hidden="true">
-            <path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/>
-            <circle cx="12" cy="13" r="3"/>
-          </svg>
-          <span class="text-xs font-secondary text-zinc-600 uppercase tracking-widest">Foto del restaurante</span>
-        </div>
+        <img
+          src="/image-frente.jpg"
+          alt="Frente del restaurante Oktava"
+          class="absolute inset-0 w-full object-cover object-center"
+        />
+        <div class="absolute inset-0 bg-linear-to-t from-black/30 to-transparent pointer-events-none"></div>
       </div>
 
     </div>
