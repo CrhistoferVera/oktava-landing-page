@@ -1,0 +1,100 @@
+---
+const APP_URL = 'https://frontend-oktava-frontend-web.b5lsqc.easypanel.host/';
+---
+
+<section id="inicio" class="relative h-screen flex items-center overflow-hidden bg-dark-300">
+
+  <!-- Imagen de fondo: colocá tu foto en public/hero-bg.jpg para activarla -->
+  <img
+    src="/hero-bg.jpg"
+    alt=""
+    aria-hidden="true"
+    class="absolute inset-0 h-full w-full object-cover object-center opacity-30"
+    onerror="this.style.display='none'"
+  />
+
+  <!-- Overlay oscuro para que el texto sea legible sobre la foto -->
+  <div class="absolute inset-0 bg-linear-to-r from-black/90 via-black/60 to-black/20 pointer-events-none"></div>
+
+  <!-- Grid background -->
+  <div class="absolute inset-0 oktava-grid-bg opacity-40 pointer-events-none"></div>
+
+  <!-- Glow orbs -->
+  <div class="absolute -top-40 -right-40 h-[600px] w-[600px] rounded-full bg-brand opacity-[0.07] blur-[140px] pointer-events-none"></div>
+  <div class="absolute -left-24 top-1/2 -translate-y-1/2 h-[500px] w-[500px] rounded-full bg-red-700/20 blur-[130px] pointer-events-none"></div>
+  <div class="absolute bottom-0 left-1/2 -translate-x-1/2 h-72 w-96 rounded-full bg-brand/5 blur-[100px] pointer-events-none"></div>
+
+  <div class="relative mx-auto max-w-6xl px-4 md:px-6 pt-20 pb-4 w-full">
+    <div class="max-w-3xl space-y-4">
+
+      <!-- Status badge -->
+      <span class="inline-flex items-center gap-2 rounded-full border border-red-500/40 bg-black/50 backdrop-blur-sm px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-red-300 font-secondary">
+        <span class="h-1.5 w-1.5 rounded-full bg-red-400 animate-pulse"></span>
+        Pedidos en línea · Abierto ahora
+      </span>
+
+      <!-- Headline -->
+      <h1 class="text-[3.5rem] sm:text-[5rem] md:text-[6rem] lg:text-[7rem] leading-[0.88] text-white font-display uppercase">
+        El Sabor<br />
+        <span class="text-brand">Que Te</span><br />
+        Obsesiona
+      </h1>
+
+      <!-- Tagline -->
+      <p class="text-zinc-300 text-base md:text-lg max-w-md leading-relaxed font-secondary">
+        Pollo a la leña, combos crispy y guarniciones irresistibles.
+        Listos en minutos, entregados a tu puerta.
+      </p>
+
+      <!-- CTAs -->
+      <div class="flex flex-wrap gap-3">
+        <a
+          href={APP_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 rounded-2xl bg-brand px-8 py-4 text-sm font-bold text-white shadow-lg shadow-red-900/40 hover:bg-red-500 hover:scale-105 active:scale-95 transition-all"
+        >
+          Hacer Pedido
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+        <a
+          href="#menu"
+          class="rounded-2xl border border-white/20 bg-white/5 backdrop-blur-sm px-8 py-4 text-sm font-semibold text-zinc-100 hover:border-white/30 hover:bg-white/10 transition-all"
+        >
+          Ver menú
+        </a>
+      </div>
+
+      <!-- Meta strip -->
+      <div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-zinc-500 font-secondary">
+        <span class="flex items-center gap-1.5">
+          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          15–25 min promedio
+        </span>
+        <span class="h-1 w-1 rounded-full bg-zinc-700"></span>
+        <span class="flex items-center gap-1.5">
+          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          Delivery y recojo en tienda
+        </span>
+        <span class="h-1 w-1 rounded-full bg-zinc-700"></span>
+        <span class="flex items-center gap-1.5">
+          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          4.9 rating
+        </span>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Price badge — desktop only -->
+  <div class="absolute bottom-10 right-8 hidden md:flex flex-col items-center justify-center h-28 w-28 rounded-full bg-brand border-4 border-red-400/25 shadow-2xl shadow-red-900/60 rotate-6 select-none">
+    <p class="text-[9px] font-semibold uppercase tracking-widest text-red-100 font-secondary">desde</p>
+    <p class="text-3xl font-black text-white leading-none font-display">Bs. 36</p>
+  </div>
+
+  <!-- Scroll indicator -->
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 hidden md:flex flex-col items-center gap-1.5 text-zinc-600 animate-bounce">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+  </div>
+
+</section>

@@ -1,0 +1,81 @@
+---
+const APP_URL = 'https://frontend-oktava-frontend-web.b5lsqc.easypanel.host/';
+---
+
+<header class="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-black/70 backdrop-blur-md">
+  <div class="mx-auto max-w-6xl px-4 md:px-6">
+    <div class="flex items-center justify-between py-3">
+
+      <!-- Logo -->
+      <a href="#inicio" class="flex items-center gap-2.5">
+        <span class="grid h-9 w-9 place-items-center rounded-full border border-red-500/60 bg-red-500/20 text-sm font-bold text-red-100 font-secondary">
+          O
+        </span>
+        <p class="text-2xl uppercase tracking-[0.16em] font-display text-white">KTAVA</p>
+      </a>
+
+      <!-- Desktop nav -->
+      <nav class="hidden md:flex items-center gap-2">
+        <a href="#nosotros" class="rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-sm text-zinc-300 hover:text-white hover:border-white/20 hover:bg-white/10 transition-all">
+          Nosotros
+        </a>
+        <a href="#menu" class="rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-sm text-zinc-300 hover:text-white hover:border-white/20 hover:bg-white/10 transition-all">
+          Menú
+        </a>
+        <a href="#galeria" class="rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-sm text-zinc-300 hover:text-white hover:border-white/20 hover:bg-white/10 transition-all">
+          Galería
+        </a>
+        <a href="#ubicacion" class="rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-sm text-zinc-300 hover:text-white hover:border-white/20 hover:bg-white/10 transition-all">
+          Ubicación
+        </a>
+        <a
+          href={APP_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="ml-2 rounded-full border border-red-500/40 bg-red-500/10 px-5 py-1.5 text-sm font-semibold text-brand hover:bg-red-500/20 hover:border-red-500/60 transition-all"
+        >
+          Hacer Pedido
+        </a>
+      </nav>
+
+      <!-- Mobile menu toggle -->
+      <details class="md:hidden group">
+        <summary class="list-none cursor-pointer flex items-center justify-center h-9 w-9 rounded-lg border border-white/10 bg-white/5 text-zinc-300 hover:text-white hover:bg-white/10 transition-all select-none">
+          <!-- Hamburger icon -->
+          <svg class="group-open:hidden" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/>
+          </svg>
+          <!-- Close icon -->
+          <svg class="hidden group-open:block" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M18 6 6 18"/><path d="m6 6 12 12"/>
+          </svg>
+        </summary>
+
+        <!-- Mobile menu panel -->
+        <div class="absolute left-0 right-0 top-full border-t border-white/10 bg-black/95 backdrop-blur-md px-4 py-4 space-y-2">
+          <a href="#nosotros" class="block rounded-xl border border-white/8 bg-white/5 px-4 py-3 text-sm text-zinc-300 hover:text-white hover:bg-white/10 transition-all">
+            Nosotros
+          </a>
+          <a href="#menu" class="block rounded-xl border border-white/8 bg-white/5 px-4 py-3 text-sm text-zinc-300 hover:text-white hover:bg-white/10 transition-all">
+            Menú
+          </a>
+          <a href="#galeria" class="block rounded-xl border border-white/8 bg-white/5 px-4 py-3 text-sm text-zinc-300 hover:text-white hover:bg-white/10 transition-all">
+            Galería
+          </a>
+          <a href="#ubicacion" class="block rounded-xl border border-white/8 bg-white/5 px-4 py-3 text-sm text-zinc-300 hover:text-white hover:bg-white/10 transition-all">
+            Ubicación
+          </a>
+          <a
+            href={APP_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="block rounded-xl border border-red-500/40 bg-red-500/10 px-4 py-3 text-sm font-semibold text-brand text-center hover:bg-red-500/20 transition-all"
+          >
+            Hacer Pedido →
+          </a>
+        </div>
+      </details>
+
+    </div>
+  </div>
+</header>

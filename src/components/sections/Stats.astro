@@ -1,0 +1,23 @@
+---
+const stats = [
+  { value: '500+',  label: 'Pedidos al día' },
+  { value: '4.9★',  label: 'Calificación', accent: true },
+  { value: '15min', label: 'Tiempo promedio' },
+  { value: '3+',    label: 'Años de sabor' },
+];
+---
+
+<section class="py-10 border-y border-white/8 bg-dark-100">
+  <div class="mx-auto max-w-6xl px-4 md:px-6">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      {stats.map(s => (
+        <div class="space-y-1">
+          <p class:list={['text-4xl md:text-5xl font-display leading-none', s.accent ? 'text-brand' : 'text-white']}>
+            {s.value}
+          </p>
+          <p class="text-xs font-secondary text-zinc-500 uppercase tracking-widest">{s.label}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

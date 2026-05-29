@@ -1,0 +1,62 @@
+---
+const reviews = [
+  {
+    initials: 'MG',
+    name: 'María G.',
+    source: 'Google Reviews',
+    quote: 'El mejor pollo que he probado en mucho tiempo. Llegó caliente, bien empacado y en menos de 20 minutos. Definitivamente vuelvo.',
+  },
+  {
+    initials: 'CR',
+    name: 'Carlos R.',
+    source: 'Google Reviews',
+    quote: 'El combo fuego es un hit. Pedí para toda la familia y quedamos impresionados con la calidad. El precio justo para lo que recibes.',
+  },
+  {
+    initials: 'LP',
+    name: 'Luciana P.',
+    source: 'Google Reviews',
+    quote: 'La app es súper fácil de usar y el pedido llegó exactamente como lo pedí. Se nota que cuidan cada detalle desde la cocina.',
+  },
+];
+---
+
+<section class="py-20 md:py-28 bg-dark-300">
+  <div class="mx-auto max-w-6xl px-4 md:px-6 space-y-10">
+
+    <!-- Header -->
+    <div>
+      <p class="text-xs font-semibold uppercase tracking-widest text-brand mb-2 font-secondary">Reseñas</p>
+      <h2 class="text-5xl md:text-6xl font-display uppercase text-white leading-none">
+        Lo que dicen
+      </h2>
+    </div>
+
+    <!-- Review cards -->
+    <div class="grid gap-5 md:grid-cols-3">
+      {reviews.map(r => (
+        <article class="oktava-surface rounded-2xl p-6 flex flex-col gap-4">
+          <!-- Stars -->
+          <div class="text-yellow-400 text-lg tracking-tight select-none" aria-label="5 estrellas">
+            ★★★★★
+          </div>
+          <!-- Quote -->
+          <p class="text-sm text-zinc-300 leading-relaxed italic font-secondary flex-1">
+            "{r.quote}"
+          </p>
+          <!-- Reviewer -->
+          <div class="flex items-center gap-3 pt-3 border-t border-white/8">
+            <div class="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-zinc-700 text-xs font-bold text-white font-secondary select-none">
+              {r.initials}
+            </div>
+            <div>
+              <p class="text-sm font-semibold text-white font-secondary">{r.name}</p>
+              <p class="text-xs text-zinc-500 font-secondary">{r.source}</p>
+            </div>
+          </div>
+        </article>
+      ))}
+    </div>
+
+  </div>
+</section>
