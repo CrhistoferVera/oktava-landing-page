@@ -1,4 +1,6 @@
 ---
+import { Image } from 'astro:assets';
+import oktavaLogo from '../../assets/oktava_logo.png';
 const APP_URL = 'https://frontend-oktava-frontend-web.b5lsqc.easypanel.host/';
 ---
 
@@ -8,7 +10,7 @@ const APP_URL = 'https://frontend-oktava-frontend-web.b5lsqc.easypanel.host/';
 
       <!-- Logo -->
       <a href="#inicio">
-        <img src="/oktava_logo.png" alt="Oktava" class="h-12 md:h-14 w-auto" />
+        <Image src={oktavaLogo} alt="Oktava" width={300} format="webp" quality={90} class="h-12 md:h-14 w-auto" />
       </a>
 
       <!-- Desktop nav -->
