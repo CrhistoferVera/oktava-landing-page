@@ -1,4 +1,12 @@
 ---
+import { Image } from 'astro:assets';
+import comida1 from '../../assets/comida1.jpg';
+import comida2 from '../../assets/comida2.jpg';
+import comida3 from '../../assets/comida3.jpg';
+import comida4 from '../../assets/comida4.jpg';
+import comida5 from '../../assets/comida5.jpg';
+import comida6 from '../../assets/comida6.jpg';
+import comida7 from '../../assets/comida7.jpg';
 ---
 
 <section id="galeria" class="py-20 md:py-28 bg-dark-100">
@@ -21,45 +29,94 @@
     -->
     <div class="grid grid-cols-3 gap-3">
 
-      <!-- comida1: ocupa 2 columnas y 2 filas -->
+      <!-- comida1: 2 cols, 2 filas -->
       <div class="col-span-2 row-span-2 rounded-2xl overflow-hidden bg-zinc-800 relative group">
-        <img src="/comida1.jpg" alt="Plato Oktava" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" />
+        <Image
+          src={comida1}
+          alt="Plato Oktava"
+          width={1000}
+          format="webp"
+          quality={80}
+          class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+        />
         <div class="absolute inset-0 bg-linear-to-t from-black/40 to-transparent pointer-events-none"></div>
       </div>
 
-      <!-- comida2: fila 1, columna 3 -->
+      <!-- comida2 -->
       <div class="aspect-video rounded-2xl overflow-hidden bg-zinc-800 relative group">
-        <img src="/comida2.jpg" alt="Plato Oktava" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" />
+        <Image
+          src={comida2}
+          alt="Plato Oktava"
+          width={500}
+          format="webp"
+          quality={80}
+          class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+        />
         <div class="absolute inset-0 bg-linear-to-t from-black/40 to-transparent pointer-events-none"></div>
       </div>
 
-      <!-- comida7: fila 2, columna 3 (debajo de comida2) -->
+      <!-- comida7: debajo de comida2 -->
       <div class="aspect-video rounded-2xl overflow-hidden bg-zinc-800 relative group">
-        <img src="/comida7.jpg" alt="Plato Oktava" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" />
+        <Image
+          src={comida7}
+          alt="Plato Oktava"
+          width={500}
+          format="webp"
+          quality={80}
+          class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+        />
         <div class="absolute inset-0 bg-linear-to-t from-black/40 to-transparent pointer-events-none"></div>
       </div>
 
       <!-- comida3 -->
       <div class="aspect-video rounded-2xl overflow-hidden bg-zinc-800 relative group">
-        <img src="/comida3.jpg" alt="Plato Oktava" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" />
+        <Image
+          src={comida3}
+          alt="Plato Oktava"
+          width={500}
+          format="webp"
+          quality={80}
+          class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+        />
         <div class="absolute inset-0 bg-linear-to-t from-black/40 to-transparent pointer-events-none"></div>
       </div>
 
       <!-- comida4 -->
       <div class="aspect-video rounded-2xl overflow-hidden bg-zinc-800 relative group">
-        <img src="/comida4.jpg" alt="Plato Oktava" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" />
+        <Image
+          src={comida4}
+          alt="Plato Oktava"
+          width={500}
+          format="webp"
+          quality={80}
+          class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+        />
         <div class="absolute inset-0 bg-linear-to-t from-black/40 to-transparent pointer-events-none"></div>
       </div>
 
       <!-- comida5 -->
       <div class="aspect-video rounded-2xl overflow-hidden bg-zinc-800 relative group">
-        <img src="/comida5.jpg" alt="Plato Oktava" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" />
+        <Image
+          src={comida5}
+          alt="Plato Oktava"
+          width={500}
+          format="webp"
+          quality={80}
+          class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+        />
         <div class="absolute inset-0 bg-linear-to-t from-black/40 to-transparent pointer-events-none"></div>
       </div>
 
       <!-- comida6: ancho completo -->
       <div class="col-span-3 aspect-video rounded-2xl overflow-hidden bg-zinc-800 relative group">
-        <img src="/comida6.jpg" alt="Plato Oktava" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" />
+        <Image
+          src={comida6}
+          alt="Plato Oktava"
+          width={1200}
+          format="webp"
+          quality={80}
+          class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+        />
         <div class="absolute inset-0 bg-linear-to-t from-black/50 to-transparent pointer-events-none"></div>
       </div>
 

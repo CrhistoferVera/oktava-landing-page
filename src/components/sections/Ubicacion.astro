@@ -1,4 +1,6 @@
 ---
+import { Image } from 'astro:assets';
+import oktavaUbi from '../../assets/oktava-ubi.jpg';
 const APP_URL = 'https://frontend-oktava-frontend-web.b5lsqc.easypanel.host/';
 ---
 
@@ -89,9 +91,12 @@ const APP_URL = 'https://frontend-oktava-frontend-web.b5lsqc.easypanel.host/';
         class="relative rounded-2xl overflow-hidden bg-zinc-900 aspect-4/3 border border-white/8 block group"
         aria-label="Ver en Google Maps"
       >
-        <img
-          src="/oktava-ubi.jpg"
+        <Image
+          src={oktavaUbi}
           alt="Ubicación de Oktava en el mapa"
+          width={800}
+          format="webp"
+          quality={80}
           class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
         />
         <!-- Overlay con ícono de Maps al hacer hover -->
