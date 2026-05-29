@@ -1,16 +1,20 @@
 ---
+import { Image } from 'astro:assets';
+import heroBg from '../../assets/hero-bg.jpg';
 const APP_URL = 'https://frontend-oktava-frontend-web.b5lsqc.easypanel.host/';
 ---
 
 <section id="inicio" class="relative h-screen flex items-center overflow-hidden bg-dark-300">
 
-  <!-- Imagen de fondo: colocá tu foto en public/hero-bg.jpg para activarla -->
-  <img
-    src="/hero-bg.jpg"
+  <!-- Imagen de fondo -->
+  <Image
+    src={heroBg}
     alt=""
     aria-hidden="true"
+    width={1920}
+    format="webp"
+    quality={75}
     class="absolute inset-0 h-full w-full object-cover object-center opacity-30"
-    onerror="this.style.display='none'"
   />
 
   <!-- Overlay oscuro para que el texto sea legible sobre la foto -->
