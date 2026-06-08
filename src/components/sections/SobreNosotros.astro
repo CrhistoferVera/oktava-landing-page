@@ -7,7 +7,7 @@ import imageFrente from '../../assets/image-frente.jpg';
   <div class="mx-auto max-w-6xl px-4 md:px-6 space-y-16">
 
     <!-- Section header -->
-    <div class="space-y-3">
+    <div class="space-y-3" data-animate="fade-up">
       <p class="text-xs font-semibold uppercase tracking-widest text-brand font-secondary">Nuestra historia</p>
       <h2 class="text-5xl md:text-7xl font-display uppercase text-white leading-none">
         Sobre <span class="text-brand">Oktava</span>
@@ -18,7 +18,7 @@ import imageFrente from '../../assets/image-frente.jpg';
     <div class="grid md:grid-cols-2 gap-10 items-center">
 
       <!-- Story card -->
-      <div class="oktava-surface rounded-2xl p-6 md:p-8 space-y-4 text-zinc-400 text-sm md:text-base leading-relaxed font-secondary">
+      <div class="oktava-surface rounded-2xl p-6 md:p-8 space-y-4 text-zinc-400 text-sm md:text-base leading-relaxed font-secondary" data-animate="fade-left" data-delay="150">
         <p>
           Oktava nació con una idea simple: llevar el sabor auténtico y la energía de la buena comida
           a más personas, sin complicaciones. Desde el primer día apostamos por ingredientes frescos,
@@ -35,7 +35,7 @@ import imageFrente from '../../assets/image-frente.jpg';
       </div>
 
       <!-- Restaurant image -->
-      <div class="relative aspect-[4/3] rounded-2xl overflow-hidden bg-zinc-800">
+      <div class="relative aspect-[4/3] rounded-2xl overflow-hidden bg-zinc-800" data-animate="fade-right" data-delay="150">
         <Image
           src={imageFrente}
           alt="Frente del restaurante Oktava"
@@ -52,7 +52,7 @@ import imageFrente from '../../assets/image-frente.jpg';
     <!-- Mission + Vision cards -->
     <div class="grid md:grid-cols-2 gap-4">
 
-      <div class="oktava-surface rounded-2xl p-6 space-y-3">
+      <div class="oktava-surface rounded-2xl p-6 space-y-3" data-animate="fade-up" data-delay="100">
         <span class="text-xs font-bold uppercase tracking-widest text-brand font-secondary">Misión</span>
         <h3 class="text-xl font-bold text-white font-secondary">Lo que hacemos cada día</h3>
         <p class="text-sm text-zinc-400 leading-relaxed font-secondary">
@@ -61,7 +61,7 @@ import imageFrente from '../../assets/image-frente.jpg';
         </p>
       </div>
 
-      <div class="oktava-surface rounded-2xl p-6 space-y-3">
+      <div class="oktava-surface rounded-2xl p-6 space-y-3" data-animate="fade-up" data-delay="250">
         <span class="text-xs font-bold uppercase tracking-widest text-brand font-secondary">Visión</span>
         <h3 class="text-xl font-bold text-white font-secondary">A dónde vamos</h3>
         <p class="text-sm text-zinc-400 leading-relaxed font-secondary">

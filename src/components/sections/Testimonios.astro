@@ -25,7 +25,7 @@ const reviews = [
   <div class="mx-auto max-w-6xl px-4 md:px-6 space-y-10">
 
     <!-- Header -->
-    <div>
+    <div data-animate="fade-up">
       <p class="text-xs font-semibold uppercase tracking-widest text-brand mb-2 font-secondary">Reseñas</p>
       <h2 class="text-5xl md:text-6xl font-display uppercase text-white leading-none">
         Lo que dicen
@@ -34,8 +34,8 @@ const reviews = [
 
     <!-- Review cards -->
     <div class="grid gap-5 md:grid-cols-3">
-      {reviews.map(r => (
-        <article class="oktava-surface rounded-2xl p-6 flex flex-col gap-4">
+      {reviews.map((r, i) => (
+        <article class="oktava-surface rounded-2xl p-6 flex flex-col gap-4" data-animate="fade-up" data-delay={String((i + 1) * 150)}>
           <!-- Stars -->
           <div class="text-yellow-400 text-lg tracking-tight select-none" aria-label="5 estrellas">
             ★★★★★

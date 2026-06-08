@@ -13,7 +13,7 @@ import comida7 from '../../assets/comida7.jpg';
   <div class="mx-auto max-w-6xl px-4 md:px-6 space-y-10">
 
     <!-- Header -->
-    <div>
+    <div data-animate="fade-up">
       <p class="text-xs font-semibold uppercase tracking-widest text-brand mb-2 font-secondary">Galería</p>
       <h2 class="text-5xl md:text-6xl font-display uppercase text-white leading-none">
         Nuestros Platos
@@ -30,7 +30,7 @@ import comida7 from '../../assets/comida7.jpg';
     <div class="grid grid-cols-3 gap-3">
 
       <!-- comida1: 2 cols, 2 filas -->
-      <div class="col-span-2 row-span-2 rounded-2xl overflow-hidden bg-zinc-800 relative group">
+      <div class="col-span-2 row-span-2 rounded-2xl overflow-hidden bg-zinc-800 relative group" data-animate="fade-left">
         <Image
           src={comida1}
           alt="Plato Oktava"
@@ -43,7 +43,7 @@ import comida7 from '../../assets/comida7.jpg';
       </div>
 
       <!-- comida2 -->
-      <div class="aspect-video rounded-2xl overflow-hidden bg-zinc-800 relative group">
+      <div class="aspect-video rounded-2xl overflow-hidden bg-zinc-800 relative group" data-animate="fade-right" data-delay="100">
         <Image
           src={comida2}
           alt="Plato Oktava"
@@ -56,7 +56,7 @@ import comida7 from '../../assets/comida7.jpg';
       </div>
 
       <!-- comida7: debajo de comida2 -->
-      <div class="aspect-video rounded-2xl overflow-hidden bg-zinc-800 relative group">
+      <div class="aspect-video rounded-2xl overflow-hidden bg-zinc-800 relative group" data-animate="fade-right" data-delay="200">
         <Image
           src={comida7}
           alt="Plato Oktava"
@@ -69,7 +69,7 @@ import comida7 from '../../assets/comida7.jpg';
       </div>
 
       <!-- comida3 -->
-      <div class="aspect-video rounded-2xl overflow-hidden bg-zinc-800 relative group">
+      <div class="aspect-video rounded-2xl overflow-hidden bg-zinc-800 relative group" data-animate="fade-up" data-delay="100">
         <Image
           src={comida3}
           alt="Plato Oktava"
@@ -82,7 +82,7 @@ import comida7 from '../../assets/comida7.jpg';
       </div>
 
       <!-- comida4 -->
-      <div class="aspect-video rounded-2xl overflow-hidden bg-zinc-800 relative group">
+      <div class="aspect-video rounded-2xl overflow-hidden bg-zinc-800 relative group" data-animate="fade-up" data-delay="200">
         <Image
           src={comida4}
           alt="Plato Oktava"
@@ -95,7 +95,7 @@ import comida7 from '../../assets/comida7.jpg';
       </div>
 
       <!-- comida5 -->
-      <div class="aspect-video rounded-2xl overflow-hidden bg-zinc-800 relative group">
+      <div class="aspect-video rounded-2xl overflow-hidden bg-zinc-800 relative group" data-animate="fade-up" data-delay="300">
         <Image
           src={comida5}
           alt="Plato Oktava"
@@ -108,7 +108,7 @@ import comida7 from '../../assets/comida7.jpg';
       </div>
 
       <!-- comida6: ancho completo -->
-      <div class="col-span-3 aspect-video rounded-2xl overflow-hidden bg-zinc-800 relative group">
+      <div class="col-span-3 aspect-video rounded-2xl overflow-hidden bg-zinc-800 relative group" data-animate="fade-up" data-delay="100">
         <Image
           src={comida6}
           alt="Plato Oktava"

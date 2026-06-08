@@ -10,8 +10,8 @@ const stats = [
 <section class="py-10 border-y border-white/8 bg-dark-100">
   <div class="mx-auto max-w-6xl px-4 md:px-6">
     <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-      {stats.map(s => (
-        <div class="space-y-1">
+      {stats.map((s, i) => (
+        <div class="space-y-1" data-animate="fade-up" data-delay={String(i * 100)}>
           <p class:list={['text-4xl md:text-5xl font-display leading-none', s.accent ? 'text-brand' : 'text-white']}>
             {s.value}
           </p>

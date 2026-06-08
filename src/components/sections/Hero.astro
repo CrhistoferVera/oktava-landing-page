@@ -1,7 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import heroBg from '../../assets/hero-bg.jpg';
-const APP_URL = 'https://frontend-oktava-frontend-web.b5lsqc.easypanel.host/';
+const APP_URL = 'https://pedido.oktava8.com';
 ---
 
 <section id="inicio" class="relative h-screen flex items-center overflow-hidden bg-dark-300">
@@ -32,26 +32,26 @@ const APP_URL = 'https://frontend-oktava-frontend-web.b5lsqc.easypanel.host/';
     <div class="max-w-3xl space-y-4">
 
       <!-- Status badge -->
-      <span class="inline-flex items-center gap-2 rounded-full border border-red-500/40 bg-black/50 backdrop-blur-sm px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-red-300 font-secondary">
+      <span class="hero-animate hero-d1 inline-flex items-center gap-2 rounded-full border border-red-500/40 bg-black/50 backdrop-blur-sm px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-red-300 font-secondary">
         <span class="h-1.5 w-1.5 rounded-full bg-red-400 animate-pulse"></span>
         Pedidos en línea · Abierto ahora
       </span>
 
       <!-- Headline -->
-      <h1 class="text-[3rem] sm:text-[4rem] md:text-[5rem] lg:text-[6rem] leading-[1.05] text-white font-display uppercase">
+      <h1 class="hero-animate hero-d2 text-[3rem] sm:text-[4rem] md:text-[5rem] lg:text-[6rem] leading-[1.05] text-white font-display uppercase">
         El Sabor<br />
         <span class="text-brand">Que Te</span><br />
         Obsesiona
       </h1>
 
       <!-- Tagline -->
-      <p class="text-zinc-300 text-base md:text-lg max-w-md leading-relaxed font-secondary">
+      <p class="hero-animate hero-d3 text-zinc-300 text-base md:text-lg max-w-md leading-relaxed font-secondary">
         Pollo a la leña, combos crispy y guarniciones irresistibles.
         Listos en minutos, entregados a tu puerta.
       </p>
 
       <!-- CTAs -->
-      <div class="flex flex-wrap gap-3">
+      <div class="hero-animate hero-d4 flex flex-wrap gap-3">
         <a
           href={APP_URL}
           target="_blank"
@@ -70,7 +70,7 @@ const APP_URL = 'https://frontend-oktava-frontend-web.b5lsqc.easypanel.host/';
       </div>
 
       <!-- Meta strip -->
-      <div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-zinc-500 font-secondary">
+      <div class="hero-animate hero-d5 flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-zinc-500 font-secondary">
         <span class="flex items-center gap-1.5">
           <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
           15–25 min promedio

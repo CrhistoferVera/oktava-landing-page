@@ -1,5 +1,5 @@
 ---
-const APP_URL = 'https://frontend-oktava-frontend-web.b5lsqc.easypanel.host/';
+const APP_URL = 'https://pedido.oktava8.com';
 
 const pillars = [
   {
@@ -38,7 +38,7 @@ const pillars = [
     <div class="relative space-y-10">
 
       <!-- Header -->
-      <div>
+      <div data-animate="fade-up">
         <p class="text-xs font-semibold uppercase tracking-widest text-brand mb-2 font-secondary">Por qué elegirnos</p>
         <h2 class="text-5xl md:text-6xl font-display uppercase text-white leading-none">
           Oktava en 3 palabras
@@ -47,8 +47,8 @@ const pillars = [
 
       <!-- 3-card grid -->
       <div class="grid gap-5 md:grid-cols-3">
-        {pillars.map(p => (
-          <article class="oktava-surface rounded-2xl p-6 flex flex-col gap-4">
+        {pillars.map((p, i) => (
+          <article class="oktava-surface rounded-2xl p-6 flex flex-col gap-4" data-animate="fade-up" data-delay={String((i + 1) * 100)}>
             <span class:list={['inline-flex h-12 w-12 items-center justify-center rounded-xl text-2xl border', p.bgClass, p.borderClass]}>
               {p.emoji}
             </span>
@@ -61,7 +61,7 @@ const pillars = [
       </div>
 
       <!-- CTA banner -->
-      <div class="relative overflow-hidden rounded-2xl bg-dark-200 border border-white/8 p-8 md:p-10 flex flex-col md:flex-row items-center gap-6">
+      <div class="relative overflow-hidden rounded-2xl bg-dark-200 border border-white/8 p-8 md:p-10 flex flex-col md:flex-row items-center gap-6" data-animate="fade-up" data-delay="100">
         <div class="absolute inset-0 oktava-grid-bg opacity-30 pointer-events-none"></div>
         <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-64 w-64 rounded-full bg-brand/10 blur-[80px] pointer-events-none"></div>
         <div class="relative flex-1">
